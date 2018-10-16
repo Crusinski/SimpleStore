@@ -3,7 +3,7 @@
 
 <head>
     <script src ="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <h1>Excella Store</h1>
 <body>
@@ -12,14 +12,32 @@
     </nav>
 
 <ul class="items">
-  <li>Shoes</li>
-  <li>Vest</li>
-  <li>pants</li>
-
+  
+<li>    
+    <span class="cost"> $15 </span>
+    <span class="itemName"> t-shirt </span>
+    <button onclick="addToCart()">add to cart</button>
+</li>
+<li>    
+        <span class="cost"> $50 </span>
+        <span class="itemName"> jeans </span>
+        <button onclick="addToCart()">add to cart</button>
+</li>
+<li>    
+        <span class="cost"> $40 </span>
+        <span class="itemName"> converse </span>
+        <button onclick="addToCart()">add to cart</button>
+</li>
+<li>    
+        <span class="cost"> {{item.cost}} </span>
+        <span class="itemName"> {{item.itemName}} </span>
+        <button onclick="addToCart()">add to cart</button>
+</li>
 
 
 </ul>
 
 </body>
+</html>
 
 <!-- add onclick -->
