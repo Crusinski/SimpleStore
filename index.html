@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script src ="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
 
-<head>
-    <script src ="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<h1>Excella Store</h1>
-<body>
-    <nav>
-        <a href="./cart.html"> Shopping Cart</a>
-    </nav>
+    <h1>Excella Store</h1>
 
-<ul class="items">
-  
-<li>    
-    <span class="cost"> $15 </span>
-    <span class="itemName"> t-shirt </span>
-    <button onclick="addToCart()">add to cart</button>
-</li>
-<li>    
-        <span class="cost"> $50 </span>
-        <span class="itemName"> jeans </span>
-        <button onclick="addToCart()">add to cart</button>
-</li>
-<li>    
-        <span class="cost"> $40 </span>
-        <span class="itemName"> converse </span>
-        <button onclick="addToCart()">add to cart</button>
-</li>
-<li>    
-        <span class="cost"> {{item.cost}} </span>
-        <span class="itemName"> {{item.itemName}} </span>
-        <button onclick="addToCart()">add to cart</button>
-</li>
-
-
-</ul>
-
-</body>
+    <body>
+        <nav>
+            <a href="./cart.html"> Shopping Cart</a>
+        </nav>
+        
+        <ul class="items" >
+            <li>    
+                <span class="cost"> $15 </span>
+                <span class="itemName"> t-shirt </span>
+                <button onclick="addToCart(15, 't-shirt')">add to cart</button>
+            </li>
+            <li>    
+                <span class="cost"> $50 </span>
+                <span class="itemName"> jeans </span>
+                <button onclick="addToCart(50, 'jeans')">add to cart</button>
+            </li>
+            <li>    
+                <span class="cost"> $40 </span>
+                <span class="itemName"> converse </span>
+                <button onclick="addToCart(40, 'converse')">add to cart</button>
+            </li>
+            <li id = "itemA" >
+                <span class="cost"> {{item.cost}} </span>
+                <span class="itemName"> {{item.itemName}} </span>
+                <button onclick="addToCart()">add to cart</button>
+            </li>
+        </ul>
+    </body>
 </html>
 
 <!-- add onclick -->

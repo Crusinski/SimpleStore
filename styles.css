@@ -57,3 +57,9 @@ h1 {
 button:hover{
     background-color: rgb(142, 150, 224);
 }
+
+.cost{
+    font-weight: bold; 
+}
+
+
